@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Mike Tietje</title>
+
+  <!--Stylesheet Imports-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/carousel.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/07d6a7e5af.js" crossorigin="anonymous"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+<body>
+
+  <div id="header"></div>
+
+  <main>
+    <div class="container-md">
+      <div class="project-title">
+        <h1>Real Time Bus Tracker</h1>
+        <h4>Project Details Below</h4>
+      </div>
+    </div>
+    <div class="container-md">
+      <div id='map' style='width: 800px; height: 900px;'></div>
+    </div>
+    <div class="container-md">
+      <h2> <strong>Project Title:</strong> Real Time Bus Tracker - Phoenix, AZ</h2>
+      <p> <strong>Description:</strong>  This project utilizes an open API from the Valley Metro Transit System in Phoenix, AZ. This API allows for real-time information on bus locations, speeds, etc to be displayed on the map. It will update the location of every bus in the Phoenix Metropolitan Area every 10 seconds. Additionally, this project will ask for the users location and will plot that on the map as well. (Note: At the current time, the map must be moved to see your location plot. The map stays centered on Phoenix.)</p>
+      <p> <strong>How to Run:</strong>  This project runs without input from the user regardless of whether location access is allowed. The map can be scrolled and zoomed.</p>
+      <p><strong>Roadmap of Future Improvements:</strong></p>
+      <ul>
+        <li>Center the map on the user's location</li>
+        <li>Only load vehicles that are currently within the map bounds</li>
+        <li>Make the bus markers clickable and expose more information about that vehicle</li>
+      </ul>
+      
+      <p> <strong>License: MIT Open Source -</strong> Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+    </div>
+  </main>
+
+  
+  <footer id="footer"></footer>
+
+  <!--JS -->
+  <script src="./js/header.js"></script>
+  <script src="./js/footer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="./js/route-update.js"></script>
+</body>
+</html>
